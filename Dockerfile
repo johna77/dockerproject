@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip templatemo_554_ocean_vibes.zip
 RUN cp -rvf templatemo_554_ocean_vibes/* .
 RUN rm -rf templatemo_554_ocean_vibes templatemo_554_ocean_vibes.zip
-CMD ["/usr/sbin/httpd", "-D", FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
