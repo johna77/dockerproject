@@ -3,11 +3,11 @@ MAINTAINER shankyx69@gmail.com
 RUN yum install -y httpd \
   zip  \
   unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page266/pro-line.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page265/shine.zip /var/www/html
 WORKDIR /var/www/html
-RUN unzip pro-line.zip
-RUN cp -rvf 2111_pro_line/* .
-RUN rm -rf pro-line.zip
+RUN unzip shine.zip
+RUN cp -rvf shine/* .
+RUN rm -rf shine.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 #12345678910
