@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM oraclelinux:7-slim
 MAINTAINER shankyx69@gmail.com
 RUN yum install -y httpd \
   zip  \
